@@ -1,0 +1,17 @@
+[
+  {
+    "name": "issuer",
+    "address": "rLREyEH1Q5UJuzsEpqJQe795s1H2aDZ3g3",
+    "seed": "sEdVoUWMWM7CAdhkPXSPZfJUgEieaFc"
+  },
+  {
+    "name": "receiver",
+    "address": "rGBQ5CYy2LGzLtYfAV6NomkwWi5szjbAhk",
+    "seed": "sEd7rf4hxcfrLxwBEoL2eWjPKvm2uhe"
+  },
+  {
+    "name": "third",
+    "address": "rNvGeZmyvkXyAky9UqydqVnvRPN5kLojkt",
+    "seed": "sEdT1m2JyrtjSUQxAp2nqahPCPNKfPM"
+  }
+]
