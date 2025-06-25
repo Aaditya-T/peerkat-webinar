@@ -110,7 +110,6 @@ node auth_trustlines_demo.js
 - All operations use the XRPL Testnet. **Do not use mainnet credentials.**
 - The scripts are for educational/demo purposes only.
 - You can modify the token code, amounts, or add more features as needed.
-- Some features (like Clawback) require specific amendments to be enabled on the Testnet and may not work if not supported.
 
 ## Resources
 - [XRPL.org Tutorials](https://xrpl.org/docs/tutorials/)
