@@ -1,12 +1,12 @@
-import asyncio
 from contextlib import asynccontextmanager
 from typing import AsyncIterator
 
 from xrpl.asyncio.clients import AsyncWebsocketClient
 from xrpl.asyncio.transaction import submit_and_wait
+from xrpl.asyncio.wallet import generate_faucet_wallet
+from xrpl.models.amounts import IssuedCurrencyAmount
 from xrpl.models.transactions import Transaction
 from xrpl.wallet import Wallet
-from xrpl.asyncio.wallet import generate_faucet_wallet
 
 TESTNET_URL = "wss://s.altnet.rippletest.net:51233"
 
@@ -38,3 +38,9 @@ async def submit_and_log(
     result = response.result["meta"]["TransactionResult"]
     print(f"{description}: {result}")
     return response
+
+
+def issued_currency_amount(
+    currency: str, issuer: str, value: str
+) -> IssuedCurrencyAmount:
+    return IssuedCurrencyAmount(currency=currency, issuer=issuer, value=value)
